@@ -35,7 +35,6 @@ rm -f /www/server/panel/data/bind.pl
 
 ```
 sed -i 's/"endtime": -1/"endtime": 999999999999/g' /www/server/panel/data/plugin.json
-
 ```
 
 4，给plugin.json文件上锁防止自动修复为免费版
@@ -44,6 +43,10 @@ sed -i 's/"endtime": -1/"endtime": 999999999999/g' /www/server/panel/data/plugin
 chattr +i /www/server/panel/data/plugin.json
 ```
 
+5,reopen the pagoda
+```
+bt restart
+```
 ============================
 
 ！！如需取消屏蔽手机号
