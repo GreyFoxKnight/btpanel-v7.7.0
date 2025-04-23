@@ -33,6 +33,11 @@ rm -f /www/server/panel/data/bind.pl
 
 搜索字符串：`"endtime": -1`全部替换为`"endtime": 999999999999`
 
+```
+sed -i 's/"endtime": -1/"endtime": 999999999999/g' /www/server/panel/data/plugin.json
+
+```
+
 4，给plugin.json文件上锁防止自动修复为免费版
 
 ```
